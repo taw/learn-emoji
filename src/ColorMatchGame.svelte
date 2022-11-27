@@ -39,7 +39,7 @@
   let gameFinished = false
 </script>
 
-<h3>Match animals names and their emoji</h3>
+<h3>Match color names and their boxes</h3>
 <div>Correct: {correct}</div>
 <div>Mistakes: {mistakes}</div>
 <div>
@@ -59,13 +59,13 @@
     {/each}
   </div>
 
-  <div class="emoji">
+  <div class="colors">
     {#each answerOrder as i}
       {@const row = gameData[i]}
       <span
         class:done={row.done}
         on:click={() => selectAnswer(i)}
-        >{row.emoji}</span>
+        style="background-color: {row.color}"></span>
     {/each}
   </div>
 </div>
@@ -86,15 +86,18 @@
     padding: 2px;
     cursor: pointer;
   }
-  .emoji {
+  .colors {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    font-size: 300%;
   }
-  .emoji {
+  .colors span {
+    font-size: 300%;
+    height: 32px;
+    width: 32px;
+    border: 1px solid black;
     cursor: pointer;
   }
-  .emoji .done {
+  .colors .done {
     opacity: 0.2;
   }
   .done {
