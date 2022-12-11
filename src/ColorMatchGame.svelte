@@ -3,9 +3,6 @@
 
   import {initColorGame, shuffleIndexes} from "./util"
 
-  $: gameData = initColorGame(data)
-  $: answerOrder = shuffleIndexes(gameData)
-
   function selectName(i) {
     if (gameData[i].done) return
     selectedNameIndex = i
@@ -35,10 +32,19 @@
     }
     gameFinished = true
   }
-  let selectedNameIndex = 0
-  let correct = 0
-  let mistakes = 0
-  let gameFinished = false
+
+  let gameData, answerOrder, selectedNameIndex, correct, mistakes, gameFinished
+  $: init(data)
+
+  // run this on init or when data changes
+  function init(data) {
+    gameData = initColorGame(data)
+    answerOrder = shuffleIndexes(gameData)
+    selectedNameIndex = 0
+    correct = 0
+    mistakes = 0
+    gameFinished = false
+  }
 </script>
 
 <h3>Match color names and their boxes</h3>
