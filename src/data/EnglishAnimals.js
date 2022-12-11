@@ -97,7 +97,7 @@ export default [
   ["🐛", "Bug"],
   ["🐜", "Ant"],
   ["🐝", "Honeybee"],
-  ["🐞", "Lady Beetle"],
+  ["🐞", "Ladybug"],
   ["🦗", "Cricket"],
   ["🕷️", "Spider"],
 ]

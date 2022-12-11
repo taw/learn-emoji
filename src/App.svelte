@@ -2,6 +2,7 @@
   import SelectMenu from "./SelectMenu.svelte"
   import GameEnglishAnimals from "./GameEnglishAnimals.svelte"
   import GameFrenchAnimals from "./GameFrenchAnimals.svelte"
+  import GamePolishAnimals from "./GamePolishAnimals.svelte"
   import GameFrenchIPAAnimals from "./GameFrenchIPAAnimals.svelte"
   import GameEnglishColors from "./GameEnglishColors.svelte"
 
@@ -36,12 +37,24 @@
       ],
     },
     {
+      code: "pl",
+      name: "Polski",
+      games: [
+        {
+          code: "animals",
+          name: "Zwierzęta",
+          component: GamePolishAnimals,
+        },
+      ],
+    },
+    {
       code: "fr-ipa",
       name: "French IPA",
       games: [
         {
           code: "animals",
           name: "Animaux",
+          // This is really terrible quality here
           component: GameFrenchIPAAnimals,
         },
       ],
