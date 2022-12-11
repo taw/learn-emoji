@@ -4,6 +4,7 @@
   import GameFrenchAnimals from "./GameFrenchAnimals.svelte"
   import GamePolishAnimals from "./GamePolishAnimals.svelte"
   import GameEnglishFood from "./GameEnglishFood.svelte"
+  import GamePolishFood from "./GamePolishFood.svelte"
   import GameFrenchIPAAnimals from "./GameFrenchIPAAnimals.svelte"
   import GameEnglishColors from "./GameEnglishColors.svelte"
 
@@ -50,6 +51,11 @@
           code: "animals",
           name: "Zwierzęta",
           component: GamePolishAnimals,
+        },
+        {
+          code: "food",
+          name: "Jedzenie",
+          component: GamePolishFood,
         },
       ],
     },

@@ -32,7 +32,6 @@ export default [
   ["🧅", "Onion"],
   ["🍄", "Mushroom"],
   ["🥜", "Peanuts"],
-  ["🫘", "Beans"],
   ["🌰", "Chestnut"],
   ["🍞", "Bread"],
   ["🥐", "Croissant"],
