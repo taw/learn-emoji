@@ -1,4 +1,4 @@
-[
+export default [
   ["🐵", "Monkey Face"],
   ["🦊", "Fox"],
   ["🐒", "Monkey"],
@@ -99,5 +99,5 @@
   ["🐝", "Honeybee"],
   ["🐞", "Lady Beetle"],
   ["🦗", "Cricket"],
-  ["🕷️", "Spider"]
+  ["🕷️", "Spider"],
 ]

@@ -1,4 +1,4 @@
-[
+export default [
   ["red", "red"],
   ["white", "white"],
   ["brown", "brown"],
@@ -10,5 +10,5 @@
   ["orange", "orange"],
   ["beige", "beige"],
   ["purple", "purple"],
-  ["pink", "pink"]
+  ["pink", "pink"],
 ]

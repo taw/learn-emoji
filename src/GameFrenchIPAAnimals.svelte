@@ -1,6 +1,6 @@
 <script>
   import {sampleSize} from "lodash"
-  import data from "./data/FrenchIPAAnimals.json"
+  import data from "./data/FrenchIPAAnimals"
   import EmojiMatchGame from "./EmojiMatchGame.svelte"
 
   let gameData = sampleSize(data, 12).map((row) => ({

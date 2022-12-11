@@ -1,4 +1,4 @@
-[
+export default [
   ["🐵", "Visage de singe"],
   ["🦊", "Renard"],
   ["🐒", "Singe"],
@@ -99,5 +99,5 @@
   ["🐝", "Abeille"],
   ["🐞", "Coccinelle"],
   ["🦗", "Cricket"],
-  ["🕷️", "Araignée"]
+  ["🕷️", "Araignée"],
 ]

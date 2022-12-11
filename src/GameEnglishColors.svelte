@@ -1,6 +1,6 @@
 <script>
   import {sampleSize} from "lodash"
-  import data from "./data/EnglishColors.json"
+  import data from "./data/EnglishColors"
   import ColorMatchGame from "./ColorMatchGame.svelte"
 
   let gameData = sampleSize(data, 12).map((row) => ({
