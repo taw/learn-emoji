@@ -1,13 +1,9 @@
 <script>
-  import {sampleSize} from "lodash"
+  import {initColorGame} from "./util"
   import data from "./data/EnglishColors"
   import ColorMatchGame from "./ColorMatchGame.svelte"
 
-  let gameData = sampleSize(data, 12).map((row) => ({
-    name: row[1],
-    color: row[0],
-    done: false,
-  }))
+  let gameData = initColorGame(data)
 </script>
 
 <ColorMatchGame {gameData} />

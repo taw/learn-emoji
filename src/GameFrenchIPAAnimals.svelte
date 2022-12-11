@@ -1,13 +1,9 @@
 <script>
-  import {sampleSize} from "lodash"
+  import {initEmojiGame} from "./util"
   import data from "./data/FrenchIPAAnimals"
   import EmojiMatchGame from "./EmojiMatchGame.svelte"
 
-  let gameData = sampleSize(data, 12).map((row) => ({
-    name: row[1],
-    emoji: row[0],
-    done: false,
-  }))
+  let gameData = initEmojiGame(data)
 </script>
 
 <EmojiMatchGame {gameData} />
