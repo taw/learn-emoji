@@ -3,6 +3,7 @@
   import GameEnglishAnimals from "./GameEnglishAnimals.svelte"
   import GameFrenchAnimals from "./GameFrenchAnimals.svelte"
   import GamePolishAnimals from "./GamePolishAnimals.svelte"
+  import GameEnglishFood from "./GameEnglishFood.svelte"
   import GameFrenchIPAAnimals from "./GameFrenchIPAAnimals.svelte"
   import GameEnglishColors from "./GameEnglishColors.svelte"
 
@@ -22,6 +23,11 @@
           code: "colors",
           name: "Colors",
           component: GameEnglishColors,
+        },
+        {
+          code: "food",
+          name: "Food",
+          component: GameEnglishFood,
         },
       ],
     },
