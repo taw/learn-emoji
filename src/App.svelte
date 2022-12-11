@@ -11,9 +11,12 @@
       selectedGame = defaultGame
     }
   }
-  $: gameComponent = gameMenu.find(o => o.code == selectedGame).component
+  $: game = gameMenu.find(o => o.code == selectedGame)
+  $: gameComponent = game.component
+  $: gameData = game.data
+  $: console.log({gameComponent, gameData})
 </script>
 
 <SelectMenu options={languageMenu} bind:selected={selectedLanguage} />
 <SelectMenu options={gameMenu} bind:selected={selectedGame} />
-<svelte:component this={gameComponent}/>
+<svelte:component this={gameComponent} data={gameData}/>

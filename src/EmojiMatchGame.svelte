@@ -3,9 +3,9 @@
 
   import {initEmojiGame, shuffleIndexes} from "./util"
 
-  let gameData = initEmojiGame(data)
+  $: gameData = initEmojiGame(data)
+  $: answerOrder = shuffleIndexes(gameData)
 
-  let answerOrder = shuffleIndexes(gameData)
   function selectName(i) {
     if (gameData[i].done) return
     selectedNameIndex = i

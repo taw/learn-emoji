@@ -3,9 +3,9 @@
 
   import {initColorGame, shuffleIndexes} from "./util"
 
-  let gameData = initColorGame(data)
+  $: gameData = initColorGame(data)
+  $: answerOrder = shuffleIndexes(gameData)
 
-  let answerOrder = shuffleIndexes(gameData)
   function selectName(i) {
     if (gameData[i].done) return
     selectedNameIndex = i

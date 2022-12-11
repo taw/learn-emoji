@@ -1,10 +1,12 @@
-import GameEnglishAnimals from "./GameEnglishAnimals.svelte"
-import GameFrenchAnimals from "./GameFrenchAnimals.svelte"
-import GamePolishAnimals from "./GamePolishAnimals.svelte"
-import GameEnglishFood from "./GameEnglishFood.svelte"
-import GamePolishFood from "./GamePolishFood.svelte"
-import GameFrenchIPAAnimals from "./GameFrenchIPAAnimals.svelte"
-import GameEnglishColors from "./GameEnglishColors.svelte"
+import ColorMatchGame from "./ColorMatchGame.svelte"
+import EmojiMatchGame from "./EmojiMatchGame.svelte"
+import EnglishAnimals from "./data/EnglishAnimals"
+import EnglishColors from "./data/EnglishColors"
+import EnglishFood from "./data/EnglishFood"
+import FrenchAnimals from "./data/FrenchAnimals"
+import FrenchIPAAnimals from "./data/FrenchIPAAnimals"
+import PolishAnimals from "./data/PolishAnimals"
+import PolishFood from "./data/PolishFood"
 
 export default [
   {
@@ -14,17 +16,20 @@ export default [
       {
         code: "animals",
         name: "Animals",
-        component: GameEnglishAnimals,
+        component: EmojiMatchGame,
+        data: EnglishAnimals,
       },
       {
         code: "colors",
         name: "Colors",
-        component: GameEnglishColors,
+        component: ColorMatchGame,
+        data: EnglishColors,
       },
       {
         code: "food",
         name: "Food",
-        component: GameEnglishFood,
+        component: EmojiMatchGame,
+        data: EnglishFood,
       },
     ],
   },
@@ -35,7 +40,8 @@ export default [
       {
         code: "animals",
         name: "Animaux",
-        component: GameFrenchAnimals,
+        component: EmojiMatchGame,
+        data: FrenchAnimals,
       },
     ],
   },
@@ -46,12 +52,14 @@ export default [
       {
         code: "animals",
         name: "Zwierzęta",
-        component: GamePolishAnimals,
+        component: EmojiMatchGame,
+        data: PolishAnimals,
       },
       {
         code: "food",
         name: "Jedzenie",
-        component: GamePolishFood,
+        component: EmojiMatchGame,
+        data: PolishFood,
       },
     ],
   },
@@ -63,7 +71,8 @@ export default [
         code: "animals",
         name: "Animaux",
         // This is really terrible quality here
-        component: GameFrenchIPAAnimals,
+        component: EmojiMatchGame,
+        data: FrenchIPAAnimals,
       },
     ],
   },
