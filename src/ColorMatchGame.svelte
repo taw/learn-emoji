@@ -1,9 +1,11 @@
 <script>
-  export let gameData
+  export let data
 
-  import {shuffle} from "lodash"
+  import {initColorGame, shuffleIndexes} from "./util"
 
-  let answerOrder = shuffle(gameData.map((row, i) => i))
+  let gameData = initColorGame(data)
+
+  let answerOrder = shuffleIndexes(gameData)
   function selectName(i) {
     if (gameData[i].done) return
     selectedNameIndex = i

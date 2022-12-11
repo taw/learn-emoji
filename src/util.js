@@ -1,4 +1,4 @@
-import {sampleSize} from "lodash"
+import {sampleSize, shuffle} from "lodash"
 
 export function initEmojiGame(data) {
   return sampleSize(data, 12).map((row) => ({
@@ -14,4 +14,8 @@ export function initColorGame(data) {
     color: row[0],
     done: false,
   }))
+}
+
+export function shuffleIndexes(data) {
+  return shuffle(data.map((row, i) => i))
 }
